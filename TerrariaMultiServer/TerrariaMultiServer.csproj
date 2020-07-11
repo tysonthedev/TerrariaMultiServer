@@ -49,44 +49,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppConfig.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Configs\AppConfig.cs" />
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddServer.cs">
+    <Compile Include="Forms\FormAddServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddServer.Designer.cs">
+    <Compile Include="Forms\FormAddServer.Designer.cs">
       <DependentUpon>FormAddServer.cs</DependentUpon>
     </Compile>
-    <Compile Include="MissingFilesDialogue.cs">
+    <Compile Include="Forms\MissingFilesDialogue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MissingFilesDialogue.Designer.cs">
+    <Compile Include="Forms\MissingFilesDialogue.Designer.cs">
       <DependentUpon>MissingFilesDialogue.cs</DependentUpon>
     </Compile>
     <Compile Include="NativeMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Server.cs" />
-    <Compile Include="ServerManager.cs" />
-    <Compile Include="TerrariaConfig.cs" />
-    <Compile Include="SettingsDialogue.cs">
+    <Compile Include="Server\Server.cs" />
+    <Compile Include="Server\ServerManager.cs" />
+    <Compile Include="Configs\TerrariaConfig.cs" />
+    <Compile Include="Forms\SettingsDialogue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SettingsDialogue.Designer.cs">
+    <Compile Include="Forms\SettingsDialogue.Designer.cs">
       <DependentUpon>SettingsDialogue.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddServer.resx">
+    <EmbeddedResource Include="Forms\FormAddServer.resx">
       <DependentUpon>FormAddServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MissingFilesDialogue.resx">
+    <EmbeddedResource Include="Forms\MissingFilesDialogue.resx">
       <DependentUpon>MissingFilesDialogue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -98,7 +98,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SettingsDialogue.resx">
+    <EmbeddedResource Include="Forms\SettingsDialogue.resx">
       <DependentUpon>SettingsDialogue.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -115,5 +115,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
