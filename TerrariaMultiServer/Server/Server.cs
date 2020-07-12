@@ -12,7 +12,12 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HtmlAgilityPack;
 using Newtonsoft.Json;
+using ScrapySharp;
+using ScrapySharp.Html;
+using ScrapySharp.Network;
+using ScrapySharp.Extensions;
 
 namespace TerrariaMultiServer
 {
@@ -31,6 +36,8 @@ namespace TerrariaMultiServer
         public Process serverProcess;
         [JsonIgnore]
         public bool isRunning { get; private set; }
+        [NonSerialized]
+        public bool autoUpdate;
         //pulled from the changelog in the server files
         public string Version()
         {
@@ -81,10 +88,11 @@ namespace TerrariaMultiServer
             } 
         }
 
-        public Server(string _serverName, string _serverDirectory)
+        public Server(string _serverName, string _serverDirectory, bool _autoUpdate)
         {
             serverName = _serverName;
             serverDirectory = _serverDirectory;
+            autoUpdate = _autoUpdate;
             serverProcess = new Process();
             serverLog = new string[logSize];
             for (int i = 0; i < logSize; i++) serverLog[i] = "";
@@ -94,7 +102,7 @@ namespace TerrariaMultiServer
         {
             _serverConfig = new TerrariaConfig(serverDirectory + "\\serverconfig.txt");
         }
-        public void StartServer()
+        public async void StartServer()
         {
             //check to see if the server is currently running if it is prompt the user to close the server
             if (serverDirectory == null) return;
@@ -106,6 +114,10 @@ namespace TerrariaMultiServer
                     MessageBox.Show("Server is currently running, please close it before trying to start the server");
                     return;
                 }
+            }
+            if (autoUpdate) 
+            {
+                await UpdateServer();
             }
             //make sure the exe file exists before trying to execute it
             if (!File.Exists(serverDirectory + "\\TerrariaServer.exe"))
@@ -133,7 +145,6 @@ namespace TerrariaMultiServer
             NativeMethods.ShowWindow(serverProcess.MainWindowHandle, 0);
             isRunning = true;
         }
-
         private void ServerOutputDataReceived(object sender, DataReceivedEventArgs e)
         {
             string parsedData = e.Data;
@@ -187,7 +198,6 @@ namespace TerrariaMultiServer
             //somewhere in here we need to figure out a way to send feedback to the players in the game on commands
             log(parsedData);
         }
-
         public void StopServer()
         {
             if (isRunning)
@@ -203,6 +213,36 @@ namespace TerrariaMultiServer
                 //serverProcess.Kill();
             }
             else MessageBox.Show("Server is currently not running or wasn't started by Terraria Multi Server");
+        }
+        public async Task UpdateServer() 
+        {
+            if (serverDirectory == null) return;
+            ScrapingBrowser browser = new ScrapingBrowser();
+            WebPage terrariaServerWikiPage = await browser.NavigateToPageAsync(new Uri("http://terraria.gamepedia.com/Server"));
+            HtmlNode[] downloadLinkNodeList = (HtmlNode[])terrariaServerWikiPage.Html.CssSelect("ul li a[href*=terraria-server-]");
+            List<(int version, string href)> versionAndHrefList = new List<(int version, string href)>();
+            foreach (HtmlNode item in downloadLinkNodeList)
+            {
+                string[] seperators = new string[] { ".zip" };
+                string[] splitData = item.Attributes["href"].Value.Split(seperators,StringSplitOptions.RemoveEmptyEntries);
+                string stringVersion = splitData[0].Substring(splitData[0].Length - 4, 4);
+                int version;
+                if (int.TryParse(stringVersion, out version))
+                    versionAndHrefList.Add((version, item.Attributes["href"].Value));
+            }
+            int currentServerVersion;
+            if (int.TryParse(Version().Replace(".", ""), out currentServerVersion))
+                versionAndHrefList.Reverse();
+            foreach ((int version, string href) item in versionAndHrefList)
+            {
+                    if (item.version > currentServerVersion) 
+                    {
+                        if (MessageBox.Show("There is a new Terraria Server version would you like to update?", "", MessageBoxButtons.YesNo) == DialogResult.No) return;
+                        ServerUpdate serverUpdate = new ServerUpdate(item.href, item.version, serverDirectory);
+                        serverUpdate.ShowDialog();
+                    return;
+                    }
+            }
         }
         //character is the special character that needs converted
         //the string is the name of that character according to the keys enum

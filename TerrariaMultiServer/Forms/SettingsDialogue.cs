@@ -121,5 +121,43 @@ namespace TerrariaMultiServer
         private void comboBoxAutoCreate_KeyDown(object sender, KeyEventArgs e)
         {
         }
+
+        private void btnFileDialogueWorld_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.CheckFileExists = true;
+            fileDialog.InitialDirectory = txtBoxWorld.Text;
+            fileDialog.DefaultExt = ".wld";
+            DialogResult result = fileDialog.ShowDialog();
+            if (result == DialogResult.OK) 
+            {
+                txtBoxWorld.Text = fileDialog.FileName;
+            }
+        }
+
+        private void btnFileDialogueBanList_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.CheckFileExists = true;
+            fileDialog.InitialDirectory = txtBoxBanList.Text;
+            fileDialog.DefaultExt = ".txt";
+            DialogResult result = fileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                txtBoxBanList.Text = fileDialog.FileName;
+            }
+        }
+
+        private void btnFileDialogueWorldPath_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderDialog = new FolderBrowserDialog();
+            folderDialog.ShowNewFolderButton = true;
+            folderDialog.SelectedPath = txtBoxWorldPath.Text;
+            DialogResult result = folderDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                txtBoxBanList.Text = folderDialog.SelectedPath;
+            }
+        }
     }
 }

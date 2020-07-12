@@ -17,20 +17,6 @@ namespace TerrariaMultiServer
 
         public ServerManager() 
         {
-            if (File.Exists(Path.GetDirectoryName(Application.ExecutablePath) + "\\serverlist.json"))
-            {
-                string serverListFileContent = File.ReadAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\serverlist.json");
-                serverList = JsonConvert.DeserializeObject<BindingList<Server>>(serverListFileContent);
-                foreach (Server server in serverList)
-                {
-                    server.CrossServerCommandHandler += Server_CrossServerCommandHandler;
-                }
-            }
-            else 
-            {
-                serverList = new BindingList<Server>();
-                File.WriteAllText(Path.GetDirectoryName(Application.ExecutablePath) + "\\serverlist.json", "{}");
-            }
             if (File.Exists(Path.GetDirectoryName(Application.ExecutablePath) + "\\appconfig.json"))
             {
                 string appConfigFileContent = File.ReadAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\appconfig.json");
@@ -41,6 +27,22 @@ namespace TerrariaMultiServer
                 appConfig = new AppConfig();
                 File.WriteAllText(Path.GetDirectoryName(Application.ExecutablePath) + "\\appconfig.json", "{}");
             }
+            if (File.Exists(Path.GetDirectoryName(Application.ExecutablePath) + "\\serverlist.json"))
+            {
+                string serverListFileContent = File.ReadAllText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\serverlist.json");
+                serverList = JsonConvert.DeserializeObject<BindingList<Server>>(serverListFileContent);
+                foreach (Server server in serverList)
+                {
+                    server.CrossServerCommandHandler += Server_CrossServerCommandHandler;
+                    server.autoUpdate = appConfig.autoUpdateServer;
+                }
+            }
+            else 
+            {
+                serverList = new BindingList<Server>();
+                File.WriteAllText(Path.GetDirectoryName(Application.ExecutablePath) + "\\serverlist.json", "{}");
+            }
+
         }
 
         private void Server_CrossServerCommandHandler(object sender, Server.CrossServerCommandEventArgs e)
@@ -56,7 +58,9 @@ namespace TerrariaMultiServer
                     foreach (Server server in serverList)
                     {
                         if (server.serverName != e.ServerName)
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                             server.RunCommand("say " + e.PlayerName + ":" + string.Join(" ", commandSplitFromArguments, 1, commandSplitFromArguments.Length - 1));
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     }
                 }
             }
@@ -77,7 +81,9 @@ namespace TerrariaMultiServer
                             {
                                 if (server.serverName == e.ServerName)
                                 {
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                                     server.RunCommand(commandSplitFromArguments[0] + " " + string.Join(" ", commandSplitFromArguments, 1, commandSplitFromArguments.Length - 1));
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                                     return;
                                 }
                             }
@@ -95,7 +101,9 @@ namespace TerrariaMultiServer
                         {
                             if (server.serverName == e.ServerName)
                             {
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                                 server.RunCommand(commandSplitFromArguments[0] + " " + string.Join(" ", commandSplitFromArguments, 1, commandSplitFromArguments.Length - 1));
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                                 return;
                             }
                         }
@@ -117,7 +125,9 @@ namespace TerrariaMultiServer
                             {
                                 if (server.serverName == e.ServerName)
                                 {
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                                     server.RunCommand(commandSplitFromArguments[0]);
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                                     return;
                                 }
                             }
@@ -147,7 +157,7 @@ namespace TerrariaMultiServer
                         return;
                     }
                 }
-                serverList.Add(new Server(formAddServer.formData.serverName, formAddServer.formData.serverDirectory));
+                serverList.Add(new Server(formAddServer.formData.serverName, formAddServer.formData.serverDirectory,appConfig.autoUpdateServer));
             }
         }
         public void RemoveServerAt(int index) 
