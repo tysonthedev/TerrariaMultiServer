@@ -93,11 +93,13 @@
             this.checkBoxSettle = new System.Windows.Forms.CheckBox();
             this.checkBoxSeed = new System.Windows.Forms.CheckBox();
             this.checkBoxPlaying = new System.Windows.Forms.CheckBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtBoxServerName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtBoxPort
             // 
-            this.txtBoxPort.Location = new System.Drawing.Point(73, 27);
+            this.txtBoxPort.Location = new System.Drawing.Point(76, 67);
             this.txtBoxPort.Name = "txtBoxPort";
             this.txtBoxPort.Size = new System.Drawing.Size(290, 20);
             this.txtBoxPort.TabIndex = 0;
@@ -105,7 +107,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 30);
+            this.label1.Location = new System.Drawing.Point(44, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 1;
@@ -114,7 +116,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Location = new System.Drawing.Point(3, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(375, 24);
             this.label2.TabIndex = 2;
@@ -124,7 +126,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 56);
+            this.label3.Location = new System.Drawing.Point(6, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 4;
@@ -132,7 +134,7 @@
             // 
             // txtBoxMaxPlayers
             // 
-            this.txtBoxMaxPlayers.Location = new System.Drawing.Point(73, 53);
+            this.txtBoxMaxPlayers.Location = new System.Drawing.Point(76, 93);
             this.txtBoxMaxPlayers.Name = "txtBoxMaxPlayers";
             this.txtBoxMaxPlayers.Size = new System.Drawing.Size(290, 20);
             this.txtBoxMaxPlayers.TabIndex = 3;
@@ -140,7 +142,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 83);
+            this.label4.Location = new System.Drawing.Point(35, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 6;
@@ -148,14 +150,14 @@
             // 
             // txtBoxWorld
             // 
-            this.txtBoxWorld.Location = new System.Drawing.Point(73, 79);
+            this.txtBoxWorld.Location = new System.Drawing.Point(76, 119);
             this.txtBoxWorld.Name = "txtBoxWorld";
             this.txtBoxWorld.Size = new System.Drawing.Size(260, 20);
             this.txtBoxWorld.TabIndex = 5;
             // 
             // btnFileDialogueWorld
             // 
-            this.btnFileDialogueWorld.Location = new System.Drawing.Point(339, 78);
+            this.btnFileDialogueWorld.Location = new System.Drawing.Point(342, 118);
             this.btnFileDialogueWorld.Name = "btnFileDialogueWorld";
             this.btnFileDialogueWorld.Size = new System.Drawing.Size(25, 22);
             this.btnFileDialogueWorld.TabIndex = 7;
@@ -166,7 +168,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 109);
+            this.label5.Location = new System.Drawing.Point(7, 149);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 9;
@@ -175,7 +177,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 135);
+            this.label6.Location = new System.Drawing.Point(25, 175);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 11;
@@ -184,7 +186,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 187);
+            this.label7.Location = new System.Drawing.Point(10, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 13);
             this.label7.TabIndex = 15;
@@ -193,7 +195,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1, 161);
+            this.label8.Location = new System.Drawing.Point(4, 201);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 13);
             this.label8.TabIndex = 13;
@@ -201,7 +203,7 @@
             // 
             // txtBoxWorldName
             // 
-            this.txtBoxWorldName.Location = new System.Drawing.Point(74, 158);
+            this.txtBoxWorldName.Location = new System.Drawing.Point(77, 198);
             this.txtBoxWorldName.Name = "txtBoxWorldName";
             this.txtBoxWorldName.Size = new System.Drawing.Size(290, 20);
             this.txtBoxWorldName.TabIndex = 12;
@@ -209,7 +211,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(35, 291);
+            this.label9.Location = new System.Drawing.Point(38, 331);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 23;
@@ -217,7 +219,7 @@
             // 
             // txtBoxSeed
             // 
-            this.txtBoxSeed.Location = new System.Drawing.Point(73, 288);
+            this.txtBoxSeed.Location = new System.Drawing.Point(76, 328);
             this.txtBoxSeed.Name = "txtBoxSeed";
             this.txtBoxSeed.Size = new System.Drawing.Size(291, 20);
             this.txtBoxSeed.TabIndex = 22;
@@ -225,7 +227,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(50, 265);
+            this.label10.Location = new System.Drawing.Point(53, 305);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(17, 13);
             this.label10.TabIndex = 21;
@@ -233,7 +235,7 @@
             // 
             // txtBoxIP
             // 
-            this.txtBoxIP.Location = new System.Drawing.Point(74, 262);
+            this.txtBoxIP.Location = new System.Drawing.Point(77, 302);
             this.txtBoxIP.Name = "txtBoxIP";
             this.txtBoxIP.Size = new System.Drawing.Size(290, 20);
             this.txtBoxIP.TabIndex = 20;
@@ -241,7 +243,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(30, 239);
+            this.label11.Location = new System.Drawing.Point(33, 279);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(37, 13);
             this.label11.TabIndex = 19;
@@ -250,7 +252,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(26, 213);
+            this.label12.Location = new System.Drawing.Point(29, 253);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 17;
@@ -259,7 +261,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(29, 395);
+            this.label13.Location = new System.Drawing.Point(32, 435);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 13);
             this.label13.TabIndex = 31;
@@ -268,7 +270,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(12, 369);
+            this.label14.Location = new System.Drawing.Point(15, 409);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(55, 13);
             this.label14.TabIndex = 29;
@@ -277,7 +279,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(28, 343);
+            this.label15.Location = new System.Drawing.Point(31, 383);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(39, 13);
             this.label15.TabIndex = 27;
@@ -285,7 +287,7 @@
             // 
             // txtBoxMOTD
             // 
-            this.txtBoxMOTD.Location = new System.Drawing.Point(73, 340);
+            this.txtBoxMOTD.Location = new System.Drawing.Point(76, 380);
             this.txtBoxMOTD.Name = "txtBoxMOTD";
             this.txtBoxMOTD.Size = new System.Drawing.Size(291, 20);
             this.txtBoxMOTD.TabIndex = 26;
@@ -293,7 +295,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(20, 317);
+            this.label16.Location = new System.Drawing.Point(23, 357);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(47, 13);
             this.label16.TabIndex = 25;
@@ -302,7 +304,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(14, 447);
+            this.label17.Location = new System.Drawing.Point(17, 487);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(53, 13);
             this.label17.TabIndex = 35;
@@ -310,7 +312,7 @@
             // 
             // txtBoxPassword
             // 
-            this.txtBoxPassword.Location = new System.Drawing.Point(73, 444);
+            this.txtBoxPassword.Location = new System.Drawing.Point(76, 484);
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(290, 20);
             this.txtBoxPassword.TabIndex = 34;
@@ -318,7 +320,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(11, 421);
+            this.label18.Location = new System.Drawing.Point(14, 461);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 13);
             this.label18.TabIndex = 33;
@@ -326,7 +328,7 @@
             // 
             // txtBoxNpcStream
             // 
-            this.txtBoxNpcStream.Location = new System.Drawing.Point(73, 418);
+            this.txtBoxNpcStream.Location = new System.Drawing.Point(76, 458);
             this.txtBoxNpcStream.Name = "txtBoxNpcStream";
             this.txtBoxNpcStream.Size = new System.Drawing.Size(290, 20);
             this.txtBoxNpcStream.TabIndex = 32;
@@ -339,14 +341,15 @@
             "small",
             "medium",
             "large"});
-            this.comboBoxAutoCreate.Location = new System.Drawing.Point(73, 106);
+            this.comboBoxAutoCreate.Location = new System.Drawing.Point(76, 146);
             this.comboBoxAutoCreate.Name = "comboBoxAutoCreate";
             this.comboBoxAutoCreate.Size = new System.Drawing.Size(290, 21);
             this.comboBoxAutoCreate.TabIndex = 36;
+            this.comboBoxAutoCreate.SelectedIndexChanged += new System.EventHandler(this.comboBoxAutoCreate_SelectedIndexChanged);
             // 
             // btnFileDialogueBanList
             // 
-            this.btnFileDialogueBanList.Location = new System.Drawing.Point(339, 131);
+            this.btnFileDialogueBanList.Location = new System.Drawing.Point(342, 171);
             this.btnFileDialogueBanList.Name = "btnFileDialogueBanList";
             this.btnFileDialogueBanList.Size = new System.Drawing.Size(25, 22);
             this.btnFileDialogueBanList.TabIndex = 38;
@@ -356,14 +359,14 @@
             // 
             // txtBoxBanList
             // 
-            this.txtBoxBanList.Location = new System.Drawing.Point(73, 132);
+            this.txtBoxBanList.Location = new System.Drawing.Point(76, 172);
             this.txtBoxBanList.Name = "txtBoxBanList";
             this.txtBoxBanList.Size = new System.Drawing.Size(260, 20);
             this.txtBoxBanList.TabIndex = 37;
             // 
             // btnFileDialogueWorldPath
             // 
-            this.btnFileDialogueWorldPath.Location = new System.Drawing.Point(340, 183);
+            this.btnFileDialogueWorldPath.Location = new System.Drawing.Point(343, 223);
             this.btnFileDialogueWorldPath.Name = "btnFileDialogueWorldPath";
             this.btnFileDialogueWorldPath.Size = new System.Drawing.Size(25, 22);
             this.btnFileDialogueWorldPath.TabIndex = 40;
@@ -373,7 +376,7 @@
             // 
             // txtBoxWorldPath
             // 
-            this.txtBoxWorldPath.Location = new System.Drawing.Point(74, 184);
+            this.txtBoxWorldPath.Location = new System.Drawing.Point(77, 224);
             this.txtBoxWorldPath.Name = "txtBoxWorldPath";
             this.txtBoxWorldPath.Size = new System.Drawing.Size(260, 20);
             this.txtBoxWorldPath.TabIndex = 39;
@@ -385,7 +388,7 @@
             this.comboBoxSecure.Items.AddRange(new object[] {
             "false",
             "true"});
-            this.comboBoxSecure.Location = new System.Drawing.Point(73, 210);
+            this.comboBoxSecure.Location = new System.Drawing.Point(76, 250);
             this.comboBoxSecure.Name = "comboBoxSecure";
             this.comboBoxSecure.Size = new System.Drawing.Size(290, 21);
             this.comboBoxSecure.TabIndex = 41;
@@ -397,7 +400,7 @@
             this.comboBoxUPNP.Items.AddRange(new object[] {
             "false",
             "true"});
-            this.comboBoxUPNP.Location = new System.Drawing.Point(73, 236);
+            this.comboBoxUPNP.Location = new System.Drawing.Point(76, 276);
             this.comboBoxUPNP.Name = "comboBoxUPNP";
             this.comboBoxUPNP.Size = new System.Drawing.Size(290, 21);
             this.comboBoxUPNP.TabIndex = 42;
@@ -411,7 +414,7 @@
             "Expert",
             "Master",
             "Journey"});
-            this.comboBoxDifficulty.Location = new System.Drawing.Point(73, 314);
+            this.comboBoxDifficulty.Location = new System.Drawing.Point(76, 354);
             this.comboBoxDifficulty.Name = "comboBoxDifficulty";
             this.comboBoxDifficulty.Size = new System.Drawing.Size(290, 21);
             this.comboBoxDifficulty.TabIndex = 43;
@@ -430,7 +433,7 @@
             "zh-Hans",
             "pt-BR",
             "pl-PL"});
-            this.comboBoxLanguage.Location = new System.Drawing.Point(73, 366);
+            this.comboBoxLanguage.Location = new System.Drawing.Point(76, 406);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
             this.comboBoxLanguage.Size = new System.Drawing.Size(290, 21);
             this.comboBoxLanguage.TabIndex = 44;
@@ -446,14 +449,14 @@
             "Normal",
             "BelowNormal",
             "Idle"});
-            this.comboBoxPriority.Location = new System.Drawing.Point(73, 392);
+            this.comboBoxPriority.Location = new System.Drawing.Point(76, 432);
             this.comboBoxPriority.Name = "comboBoxPriority";
             this.comboBoxPriority.Size = new System.Drawing.Size(290, 21);
             this.comboBoxPriority.TabIndex = 45;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(10, 500);
+            this.btnSave.Location = new System.Drawing.Point(10, 535);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(546, 23);
             this.btnSave.TabIndex = 46;
@@ -464,7 +467,7 @@
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(369, 0);
+            this.label19.Location = new System.Drawing.Point(372, 40);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(188, 24);
             this.label19.TabIndex = 47;
@@ -473,7 +476,7 @@
             // 
             // checkBoxCrossServerChat
             // 
-            this.checkBoxCrossServerChat.Location = new System.Drawing.Point(369, 29);
+            this.checkBoxCrossServerChat.Location = new System.Drawing.Point(372, 69);
             this.checkBoxCrossServerChat.Name = "checkBoxCrossServerChat";
             this.checkBoxCrossServerChat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxCrossServerChat.Size = new System.Drawing.Size(188, 17);
@@ -485,7 +488,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(369, 103);
+            this.label20.Location = new System.Drawing.Point(372, 143);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(188, 24);
             this.label20.TabIndex = 49;
@@ -494,7 +497,8 @@
             // 
             // checkBoxCrossServerPlayingCommand
             // 
-            this.checkBoxCrossServerPlayingCommand.Location = new System.Drawing.Point(369, 47);
+            this.checkBoxCrossServerPlayingCommand.Enabled = false;
+            this.checkBoxCrossServerPlayingCommand.Location = new System.Drawing.Point(372, 87);
             this.checkBoxCrossServerPlayingCommand.Name = "checkBoxCrossServerPlayingCommand";
             this.checkBoxCrossServerPlayingCommand.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxCrossServerPlayingCommand.Size = new System.Drawing.Size(188, 17);
@@ -505,7 +509,7 @@
             // 
             // checkBoxAutoUpdateServer
             // 
-            this.checkBoxAutoUpdateServer.Location = new System.Drawing.Point(369, 83);
+            this.checkBoxAutoUpdateServer.Location = new System.Drawing.Point(372, 123);
             this.checkBoxAutoUpdateServer.Name = "checkBoxAutoUpdateServer";
             this.checkBoxAutoUpdateServer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxAutoUpdateServer.Size = new System.Drawing.Size(188, 17);
@@ -516,7 +520,8 @@
             // 
             // checkBoxAllowMobileAppControl
             // 
-            this.checkBoxAllowMobileAppControl.Location = new System.Drawing.Point(369, 65);
+            this.checkBoxAllowMobileAppControl.Enabled = false;
+            this.checkBoxAllowMobileAppControl.Location = new System.Drawing.Point(372, 105);
             this.checkBoxAllowMobileAppControl.Name = "checkBoxAllowMobileAppControl";
             this.checkBoxAllowMobileAppControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxAllowMobileAppControl.Size = new System.Drawing.Size(188, 17);
@@ -527,7 +532,7 @@
             // 
             // checkBoxExit
             // 
-            this.checkBoxExit.Location = new System.Drawing.Point(369, 130);
+            this.checkBoxExit.Location = new System.Drawing.Point(372, 170);
             this.checkBoxExit.Name = "checkBoxExit";
             this.checkBoxExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxExit.Size = new System.Drawing.Size(188, 17);
@@ -538,7 +543,7 @@
             // 
             // checkBoxExitNoSave
             // 
-            this.checkBoxExitNoSave.Location = new System.Drawing.Point(369, 148);
+            this.checkBoxExitNoSave.Location = new System.Drawing.Point(372, 188);
             this.checkBoxExitNoSave.Name = "checkBoxExitNoSave";
             this.checkBoxExitNoSave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxExitNoSave.Size = new System.Drawing.Size(188, 17);
@@ -549,7 +554,7 @@
             // 
             // checkBoxKick
             // 
-            this.checkBoxKick.Location = new System.Drawing.Point(369, 184);
+            this.checkBoxKick.Location = new System.Drawing.Point(372, 224);
             this.checkBoxKick.Name = "checkBoxKick";
             this.checkBoxKick.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxKick.Size = new System.Drawing.Size(188, 17);
@@ -560,7 +565,7 @@
             // 
             // checkBoxSave
             // 
-            this.checkBoxSave.Location = new System.Drawing.Point(369, 166);
+            this.checkBoxSave.Location = new System.Drawing.Point(372, 206);
             this.checkBoxSave.Name = "checkBoxSave";
             this.checkBoxSave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxSave.Size = new System.Drawing.Size(188, 17);
@@ -571,7 +576,7 @@
             // 
             // checkBoxBan
             // 
-            this.checkBoxBan.Location = new System.Drawing.Point(369, 202);
+            this.checkBoxBan.Location = new System.Drawing.Point(372, 242);
             this.checkBoxBan.Name = "checkBoxBan";
             this.checkBoxBan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxBan.Size = new System.Drawing.Size(188, 17);
@@ -582,7 +587,7 @@
             // 
             // checkBoxPort
             // 
-            this.checkBoxPort.Location = new System.Drawing.Point(369, 292);
+            this.checkBoxPort.Location = new System.Drawing.Point(372, 332);
             this.checkBoxPort.Name = "checkBoxPort";
             this.checkBoxPort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPort.Size = new System.Drawing.Size(188, 17);
@@ -593,7 +598,7 @@
             // 
             // checkBoxTime
             // 
-            this.checkBoxTime.Location = new System.Drawing.Point(369, 274);
+            this.checkBoxTime.Location = new System.Drawing.Point(372, 314);
             this.checkBoxTime.Name = "checkBoxTime";
             this.checkBoxTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxTime.Size = new System.Drawing.Size(188, 17);
@@ -604,7 +609,7 @@
             // 
             // checkBoxVersion
             // 
-            this.checkBoxVersion.Location = new System.Drawing.Point(369, 256);
+            this.checkBoxVersion.Location = new System.Drawing.Point(372, 296);
             this.checkBoxVersion.Name = "checkBoxVersion";
             this.checkBoxVersion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxVersion.Size = new System.Drawing.Size(188, 17);
@@ -615,7 +620,7 @@
             // 
             // checkBoxPasswordSet
             // 
-            this.checkBoxPasswordSet.Location = new System.Drawing.Point(369, 238);
+            this.checkBoxPasswordSet.Location = new System.Drawing.Point(372, 278);
             this.checkBoxPasswordSet.Name = "checkBoxPasswordSet";
             this.checkBoxPasswordSet.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPasswordSet.Size = new System.Drawing.Size(188, 17);
@@ -626,7 +631,7 @@
             // 
             // checkBoxPassword
             // 
-            this.checkBoxPassword.Location = new System.Drawing.Point(369, 220);
+            this.checkBoxPassword.Location = new System.Drawing.Point(372, 260);
             this.checkBoxPassword.Name = "checkBoxPassword";
             this.checkBoxPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPassword.Size = new System.Drawing.Size(188, 17);
@@ -637,7 +642,7 @@
             // 
             // checkBoxMaxPlayers
             // 
-            this.checkBoxMaxPlayers.Location = new System.Drawing.Point(369, 310);
+            this.checkBoxMaxPlayers.Location = new System.Drawing.Point(372, 350);
             this.checkBoxMaxPlayers.Name = "checkBoxMaxPlayers";
             this.checkBoxMaxPlayers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMaxPlayers.Size = new System.Drawing.Size(188, 17);
@@ -648,7 +653,7 @@
             // 
             // checkBoxMotd
             // 
-            this.checkBoxMotd.Location = new System.Drawing.Point(369, 328);
+            this.checkBoxMotd.Location = new System.Drawing.Point(372, 368);
             this.checkBoxMotd.Name = "checkBoxMotd";
             this.checkBoxMotd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMotd.Size = new System.Drawing.Size(188, 17);
@@ -659,7 +664,7 @@
             // 
             // checkBoxMotdSet
             // 
-            this.checkBoxMotdSet.Location = new System.Drawing.Point(369, 346);
+            this.checkBoxMotdSet.Location = new System.Drawing.Point(372, 386);
             this.checkBoxMotdSet.Name = "checkBoxMotdSet";
             this.checkBoxMotdSet.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMotdSet.Size = new System.Drawing.Size(188, 17);
@@ -670,7 +675,7 @@
             // 
             // checkBoxDawn
             // 
-            this.checkBoxDawn.Location = new System.Drawing.Point(369, 364);
+            this.checkBoxDawn.Location = new System.Drawing.Point(372, 404);
             this.checkBoxDawn.Name = "checkBoxDawn";
             this.checkBoxDawn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxDawn.Size = new System.Drawing.Size(188, 17);
@@ -681,7 +686,7 @@
             // 
             // checkBoxNoon
             // 
-            this.checkBoxNoon.Location = new System.Drawing.Point(369, 382);
+            this.checkBoxNoon.Location = new System.Drawing.Point(372, 422);
             this.checkBoxNoon.Name = "checkBoxNoon";
             this.checkBoxNoon.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxNoon.Size = new System.Drawing.Size(188, 17);
@@ -692,7 +697,7 @@
             // 
             // checkBoxDusk
             // 
-            this.checkBoxDusk.Location = new System.Drawing.Point(369, 400);
+            this.checkBoxDusk.Location = new System.Drawing.Point(372, 440);
             this.checkBoxDusk.Name = "checkBoxDusk";
             this.checkBoxDusk.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxDusk.Size = new System.Drawing.Size(188, 17);
@@ -703,7 +708,7 @@
             // 
             // checkBoxMidnight
             // 
-            this.checkBoxMidnight.Location = new System.Drawing.Point(369, 418);
+            this.checkBoxMidnight.Location = new System.Drawing.Point(372, 458);
             this.checkBoxMidnight.Name = "checkBoxMidnight";
             this.checkBoxMidnight.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMidnight.Size = new System.Drawing.Size(188, 17);
@@ -714,7 +719,7 @@
             // 
             // checkBoxSettle
             // 
-            this.checkBoxSettle.Location = new System.Drawing.Point(369, 436);
+            this.checkBoxSettle.Location = new System.Drawing.Point(372, 476);
             this.checkBoxSettle.Name = "checkBoxSettle";
             this.checkBoxSettle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxSettle.Size = new System.Drawing.Size(188, 17);
@@ -725,7 +730,7 @@
             // 
             // checkBoxSeed
             // 
-            this.checkBoxSeed.Location = new System.Drawing.Point(369, 454);
+            this.checkBoxSeed.Location = new System.Drawing.Point(372, 494);
             this.checkBoxSeed.Name = "checkBoxSeed";
             this.checkBoxSeed.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxSeed.Size = new System.Drawing.Size(188, 17);
@@ -736,7 +741,7 @@
             // 
             // checkBoxPlaying
             // 
-            this.checkBoxPlaying.Location = new System.Drawing.Point(369, 472);
+            this.checkBoxPlaying.Location = new System.Drawing.Point(372, 512);
             this.checkBoxPlaying.Name = "checkBoxPlaying";
             this.checkBoxPlaying.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPlaying.Size = new System.Drawing.Size(188, 17);
@@ -745,11 +750,29 @@
             this.checkBoxPlaying.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBoxPlaying.UseVisualStyleBackColor = true;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(1, 15);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(69, 13);
+            this.label21.TabIndex = 76;
+            this.label21.Text = "Server Name";
+            // 
+            // txtBoxServerName
+            // 
+            this.txtBoxServerName.Location = new System.Drawing.Point(76, 12);
+            this.txtBoxServerName.Name = "txtBoxServerName";
+            this.txtBoxServerName.Size = new System.Drawing.Size(480, 20);
+            this.txtBoxServerName.TabIndex = 75;
+            // 
             // SettingsDialogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 535);
+            this.ClientSize = new System.Drawing.Size(566, 565);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.txtBoxServerName);
             this.Controls.Add(this.checkBoxPlaying);
             this.Controls.Add(this.checkBoxSeed);
             this.Controls.Add(this.checkBoxSettle);
@@ -894,5 +917,7 @@
         private System.Windows.Forms.CheckBox checkBoxSettle;
         private System.Windows.Forms.CheckBox checkBoxSeed;
         private System.Windows.Forms.CheckBox checkBoxPlaying;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtBoxServerName;
     }
 }

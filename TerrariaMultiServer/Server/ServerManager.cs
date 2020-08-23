@@ -149,16 +149,21 @@ namespace TerrariaMultiServer
             if (formAddServer.DialogResult == DialogResult.OK)
             {
                 //check server list for a duplicate server directory
-                foreach (Server server in serverList)
-                {
-                    if (server.serverDirectory == formAddServer.formData.serverDirectory)
-                    {
-                        MessageBox.Show("This server has already been added and is named " + "\"" + server.serverName + "\"");
-                        return;
-                    }
-                }
+                if (DoesServerDirectoryAlreadyExist(formAddServer.formData.serverDirectory)) return;
                 serverList.Add(new Server(formAddServer.formData.serverName, formAddServer.formData.serverDirectory,appConfig.autoUpdateServer));
             }
+        }
+        public bool DoesServerDirectoryAlreadyExist(string directory) 
+        {
+            foreach (Server server in serverList)
+            {
+                if (server.serverDirectory == directory)
+                {
+                    MessageBox.Show("This server has already been added and is named " + "\"" + server.serverName + "\"");
+                    return true;
+                }
+            }
+            return false;
         }
         public void RemoveServerAt(int index) 
         {

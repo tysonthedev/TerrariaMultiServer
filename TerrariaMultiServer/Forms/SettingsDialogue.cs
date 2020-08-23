@@ -12,22 +12,27 @@ namespace TerrariaMultiServer
 {
     public partial class SettingsDialogue : Form
     {
+        public string ServerName;
         public TerrariaConfig terrariaConfig;
         public AppConfig appConfig;
 
-        public SettingsDialogue(TerrariaConfig _terrariaConfig, AppConfig _appConfig)
+        public SettingsDialogue(string serverName,TerrariaConfig _terrariaConfig, AppConfig _appConfig)
         {
             InitializeComponent();
+            ServerName = serverName;
+            txtBoxServerName.Text = serverName;
             terrariaConfig = _terrariaConfig;
             appConfig = _appConfig;
+            if (serverName == null) ServerName = "";
             if (terrariaConfig == null) terrariaConfig = new TerrariaConfig();
             if (appConfig == null) appConfig = new AppConfig();
             txtBoxPort.Text = terrariaConfig.config["port"];
             txtBoxMaxPlayers.Text = terrariaConfig.config["maxplayers"];
             txtBoxWorld.Text = terrariaConfig.config["world"];
+            txtBoxWorldPath.Text = terrariaConfig.config["worldpath"];
             int comboBoxTemp;
             if (!int.TryParse(terrariaConfig.config["autocreate"], out comboBoxTemp)) comboBoxTemp = 0;
-            comboBoxAutoCreate.SelectedIndex = comboBoxTemp == 3 ? 2 : comboBoxTemp;
+            comboBoxAutoCreate.SelectedIndex = comboBoxTemp == 3 ? 2 : comboBoxTemp - 1;
             txtBoxBanList.Text = terrariaConfig.config["banlist"];
             txtBoxWorldName.Text = terrariaConfig.config["worldname"];
             comboBoxSecure.SelectedIndex = int.TryParse(terrariaConfig.config["secure"], out comboBoxTemp) ? comboBoxTemp : 0;
@@ -74,12 +79,14 @@ namespace TerrariaMultiServer
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            ServerName = txtBoxServerName.Text;
             terrariaConfig.config["port"] = txtBoxPort.Text;
             terrariaConfig.config["maxplayers"] = txtBoxMaxPlayers.Text;
             terrariaConfig.config["world"] = txtBoxWorld.Text;
-            terrariaConfig.config["autocreate"] = comboBoxAutoCreate.SelectedItem != null ? comboBoxAutoCreate.SelectedIndex.ToString() : "";
+            terrariaConfig.config["autocreate"] = comboBoxAutoCreate.SelectedItem != null ? (comboBoxAutoCreate.SelectedIndex + 1).ToString() : "";
             terrariaConfig.config["banlist"] = txtBoxBanList.Text;
             terrariaConfig.config["worldname"] = txtBoxWorldName.Text;
+            terrariaConfig.config["worldpath"] = txtBoxWorldPath.Text;
             terrariaConfig.config["secure"] = comboBoxSecure.SelectedItem != null ? comboBoxSecure.SelectedIndex.ToString() : "";
             terrariaConfig.config["upnp"] = comboBoxUPNP.SelectedItem != null ? comboBoxUPNP.SelectedIndex.ToString() : "";
             terrariaConfig.config["ip"] = txtBoxIP.Text;
@@ -156,8 +163,13 @@ namespace TerrariaMultiServer
             DialogResult result = folderDialog.ShowDialog();
             if (result == DialogResult.OK)
             {
-                txtBoxBanList.Text = folderDialog.SelectedPath;
+                txtBoxWorldPath.Text = folderDialog.SelectedPath;
             }
+        }
+
+        private void comboBoxAutoCreate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

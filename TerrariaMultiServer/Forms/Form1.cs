@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -9,6 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TerrariaMultiServer.Forms;
 using TerrariaMultiServer.Properties;
 
 namespace TerrariaMultiServer
@@ -33,9 +35,31 @@ namespace TerrariaMultiServer
                 serverManager.serverList[i].StopServer();
             }
         }
-        private void btnAddServer_Click(object sender, EventArgs e)
+        private async void btnAddServer_Click(object sender, EventArgs e)
         {
-            serverManager.AddServer();
+            NewOrExistingServer newOrExistingServerDialogue = new NewOrExistingServer();
+            newOrExistingServerDialogue.ShowDialog();
+            switch (newOrExistingServerDialogue.returnValue)
+            {
+                case NewOrExistingServer.ServerFormReturnValue.NewServer:
+                    NewServerDialogue newServerDialogue = new NewServerDialogue();
+                    newServerDialogue.ShowDialog();
+                    if (newServerDialogue.DialogResult == DialogResult.OK) 
+                    {
+                        if (serverManager.DoesServerDirectoryAlreadyExist(newServerDialogue.serverDirectory)) return;
+                        DialogResult startServerResult = MessageBox.Show("In order to generate a world you will have to run the server natively without using this server manager. ");
+                        serverManager.serverList.Add(new Server(newServerDialogue.serverName, newServerDialogue.serverDirectory, serverManager.appConfig.autoUpdateServer));
+                        await serverManager.serverList[serverManager.serverList.Count - 1].UpdateServer(false);
+                    }
+                    break;
+                case NewOrExistingServer.ServerFormReturnValue.ExistingServer:
+                    serverManager.AddServer();
+                    break;
+                case NewOrExistingServer.ServerFormReturnValue.Cancel:
+                    break;
+                default:
+                    break;
+            }
         }
         private void btnRemoveServer_Click(object sender, EventArgs e)
         {
@@ -118,12 +142,21 @@ namespace TerrariaMultiServer
         {
             if (listBoxServers.SelectedItem != null) 
             {
-                SettingsDialogue settingsDialogue = new SettingsDialogue(serverManager.serverList[listBoxServers.SelectedIndex].serverConfig, serverManager.appConfig);
+                SettingsDialogue settingsDialogue = new SettingsDialogue(serverManager.serverList[listBoxServers.SelectedIndex].serverName,serverManager.serverList[listBoxServers.SelectedIndex].serverConfig, serverManager.appConfig);
                 if (settingsDialogue.ShowDialog() == DialogResult.Yes) 
                 {
+                    serverManager.serverList[listBoxServers.SelectedIndex].serverName = settingsDialogue.ServerName;
                     serverManager.appConfig = settingsDialogue.appConfig;
+                    foreach (Server server in serverManager.serverList)
+                    {
+                        server.autoUpdate = serverManager.appConfig.autoUpdateServer;
+                    }
                     if (listBoxServers.SelectedItem != null)
                         serverManager.serverList[listBoxServers.SelectedIndex].serverConfig = settingsDialogue.terrariaConfig;
+                    //we need to refresh the datasource to update the name correctly
+                    listBoxServers.DataSource = null;
+                    listBoxServers.DataSource = serverManager.serverList;
+                    listBoxServers.DisplayMember = "serverName";
 
                 }
             }

@@ -36,7 +36,6 @@ namespace TerrariaMultiServer
             {
                 (nameOfFile:"changelog.txt",doesFileExist:false),
                 (nameOfFile:"serverconfig.txt",doesFileExist:false),
-                (nameOfFile: "start-server.bat", doesFileExist: false),
                 (nameOfFile: "TerrariaServer.exe", doesFileExist: false),
                 (nameOfFile: "ReLogic.Native.dll", doesFileExist: false)
             };

@@ -49,7 +49,7 @@ namespace TerrariaMultiServer
                 if (versionLine.Split(' ').Length > 1) return versionLine.Split(' ')[1];
                 else return "problem parsing version from changelog.txt";
             }
-            return "changelog.txt doesn't exist";
+            return "0";
         }
         [NonSerialized]
         private TerrariaConfig _serverConfig;
@@ -117,7 +117,7 @@ namespace TerrariaMultiServer
             }
             if (autoUpdate) 
             {
-                await UpdateServer();
+                await UpdateServer(true);
             }
             //make sure the exe file exists before trying to execute it
             if (!File.Exists(serverDirectory + "\\TerrariaServer.exe"))
@@ -214,7 +214,7 @@ namespace TerrariaMultiServer
             }
             else MessageBox.Show("Server is currently not running or wasn't started by Terraria Multi Server");
         }
-        public async Task UpdateServer() 
+        public async Task UpdateServer(bool askForUserPermissionForUpdate) 
         {
             if (serverDirectory == null) return;
             ScrapingBrowser browser = new ScrapingBrowser();
@@ -237,7 +237,10 @@ namespace TerrariaMultiServer
             {
                     if (item.version > currentServerVersion) 
                     {
+                    if (askForUserPermissionForUpdate)
+                    {
                         if (MessageBox.Show("There is a new Terraria Server version would you like to update?", "", MessageBoxButtons.YesNo) == DialogResult.No) return;
+                    }
                         ServerUpdate serverUpdate = new ServerUpdate(item.href, item.version, serverDirectory);
                         serverUpdate.ShowDialog();
                     return;

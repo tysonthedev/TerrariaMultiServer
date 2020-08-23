@@ -115,6 +115,7 @@ namespace TerrariaMultiServer
                 safeReplaceFile(sourceDirectory + "\\TerrariaServer.exe", serverDirectory + "\\TerrariaServer.exe");
                 safeReplaceFile(sourceDirectory + "\\changelog.txt", serverDirectory + "\\changelog.txt");
                 safeReplaceFile(sourceDirectory + "\\ReLogic.Native.dll", serverDirectory + "\\ReLogic.Native.dll");
+                if (!File.Exists(serverDirectory + "serverconfig.txt")) safeReplaceFile(sourceDirectory + "\\serverconfig.txt", serverDirectory + "\\serverconfig.txt");
             }
             else 
             {

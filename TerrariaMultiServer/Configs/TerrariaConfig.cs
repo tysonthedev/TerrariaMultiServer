@@ -75,8 +75,8 @@ namespace TerrariaMultiServer
             }
             else 
             {
-                MissingFilesDialogue missingFilesDialogue = new MissingFilesDialogue(new string[] {"serverconfig.txt"});
-                missingFilesDialogue.ShowDialog();
+                //MissingFilesDialogue missingFilesDialogue = new MissingFilesDialogue(new string[] {"serverconfig.txt"});
+                //missingFilesDialogue.ShowDialog();
             }
         }
     }
