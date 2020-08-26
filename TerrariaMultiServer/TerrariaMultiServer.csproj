@@ -113,6 +113,12 @@
     <Compile Include="Forms\ServerUpdate.Designer.cs">
       <DependentUpon>ServerUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\MenuBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MenuBar.Designer.cs">
+      <DependentUpon>MenuBar.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ServerUpdate.resx">
       <DependentUpon>ServerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MenuBar.resx">
+      <DependentUpon>MenuBar.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -43,6 +43,10 @@ namespace TerrariaMultiServer
         {
             progressBarDownloadProgress.Value = e.ProgressPercentage;
         }
+        private void OnMenuBarClose(object sender, EventArgs e) 
+        {
+
+        }
 
         private void WebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
         {
@@ -125,11 +129,6 @@ namespace TerrariaMultiServer
         }
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you would like to cancel the server download?", "", MessageBoxButtons.YesNo) == DialogResult.Yes) webClient.CancelAsync();
-            if (File.Exists(DownloadLocation + "\\terraria-server-" + versionUpdatingTo.ToString() + ".zip"))
-            {
-                File.Delete(DownloadLocation + "\\terraria-server-" + versionUpdatingTo.ToString() + ".zip");
-            }
                 this.Close();
         }
 
@@ -161,6 +160,22 @@ namespace TerrariaMultiServer
                 webClient.DownloadProgressChanged += WebClient_DownloadProgressChanged;
                 webClient.DownloadFileAsync(new Uri(fileDownloadLink), DownloadLocation + "\\terraria-server-" + versionUpdatingTo.ToString() + ".zip");
                 changeStatus("downloading latest version");
+            }
+        }
+
+        private void ServerUpdate_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you would like to cancel the server download?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                webClient.CancelAsync();
+                if (File.Exists(DownloadLocation + "\\terraria-server-" + versionUpdatingTo.ToString() + ".zip"))
+                {
+                    File.Delete(DownloadLocation + "\\terraria-server-" + versionUpdatingTo.ToString() + ".zip");
+                }
+            }
+            else 
+            {
+                e.Cancel = true;
             }
         }
     }

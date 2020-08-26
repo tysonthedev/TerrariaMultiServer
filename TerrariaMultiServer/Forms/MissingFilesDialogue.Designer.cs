@@ -30,12 +30,14 @@
         {
             this.lblMissingFiles = new System.Windows.Forms.Label();
             this.txtBoxMissingFiles = new System.Windows.Forms.TextBox();
+            this.menuBar1 = new TerrariaMultiServer.UserControls.MenuBar();
             this.SuspendLayout();
             // 
             // lblMissingFiles
             // 
-            this.lblMissingFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMissingFiles.Location = new System.Drawing.Point(12, 9);
+            this.lblMissingFiles.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMissingFiles.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMissingFiles.Location = new System.Drawing.Point(12, 39);
             this.lblMissingFiles.Name = "lblMissingFiles";
             this.lblMissingFiles.Size = new System.Drawing.Size(260, 13);
             this.lblMissingFiles.TabIndex = 0;
@@ -45,10 +47,11 @@
             // txtBoxMissingFiles
             // 
             this.txtBoxMissingFiles.AcceptsReturn = true;
-            this.txtBoxMissingFiles.BackColor = System.Drawing.SystemColors.Control;
+            this.txtBoxMissingFiles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.txtBoxMissingFiles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxMissingFiles.Enabled = false;
-            this.txtBoxMissingFiles.Location = new System.Drawing.Point(12, 25);
+            this.txtBoxMissingFiles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxMissingFiles.Location = new System.Drawing.Point(12, 55);
             this.txtBoxMissingFiles.Multiline = true;
             this.txtBoxMissingFiles.Name = "txtBoxMissingFiles";
             this.txtBoxMissingFiles.ReadOnly = true;
@@ -57,18 +60,30 @@
             this.txtBoxMissingFiles.Text = "\r\n";
             this.txtBoxMissingFiles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // menuBar1
+            // 
+            this.menuBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
+            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuBar1.Location = new System.Drawing.Point(0, 0);
+            this.menuBar1.Name = "menuBar1";
+            this.menuBar1.Size = new System.Drawing.Size(284, 30);
+            this.menuBar1.TabIndex = 2;
+            // 
             // MissingFilesDialogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 193);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(74)))), ((int)(((byte)(72)))));
+            this.ClientSize = new System.Drawing.Size(284, 210);
+            this.Controls.Add(this.menuBar1);
             this.Controls.Add(this.txtBoxMissingFiles);
             this.Controls.Add(this.lblMissingFiles);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MissingFilesDialogue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MissingFilesDialogue";
+            this.Text = "Missing Files";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,5 +93,6 @@
 
         private System.Windows.Forms.Label lblMissingFiles;
         private System.Windows.Forms.TextBox txtBoxMissingFiles;
+        private UserControls.MenuBar menuBar1;
     }
 }

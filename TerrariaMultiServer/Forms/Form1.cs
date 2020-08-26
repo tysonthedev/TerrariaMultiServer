@@ -64,7 +64,7 @@ namespace TerrariaMultiServer
         private void btnRemoveServer_Click(object sender, EventArgs e)
         {
             if (listBoxServers.SelectedItem == null) return;
-            serverManager.RemoveServerAt(listBoxServers.SelectedIndex);
+            serverManager.RemoveServer(listBoxServers.GetItemText(listBoxServers.SelectedItem));
         }
         private void btnStartServer_Click(object sender, EventArgs e)
         {
@@ -123,6 +123,7 @@ namespace TerrariaMultiServer
 
         private async void btnSubmitCommand_Click(object sender, EventArgs e)
         {
+            if (listBoxServers.SelectedIndex < 0) return;
             await serverManager.serverList[listBoxServers.SelectedIndex].RunCommand(txtBoxCommand.Text);
         }
 
@@ -130,6 +131,7 @@ namespace TerrariaMultiServer
         {
             if (e.KeyCode.ToString() == Keys.Enter.ToString()) 
             {
+                if (listBoxServers.SelectedIndex < 0) return;
 #pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 serverManager.serverList[listBoxServers.SelectedIndex].RunCommand(txtBoxCommand.Text);
 #pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
@@ -162,6 +164,11 @@ namespace TerrariaMultiServer
             }
         }
         private void txtBoxCommand_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

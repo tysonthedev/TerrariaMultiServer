@@ -95,28 +95,36 @@
             this.checkBoxPlaying = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtBoxServerName = new System.Windows.Forms.TextBox();
+            this.menuBar1 = new TerrariaMultiServer.UserControls.MenuBar();
             this.SuspendLayout();
             // 
             // txtBoxPort
             // 
-            this.txtBoxPort.Location = new System.Drawing.Point(76, 67);
+            this.txtBoxPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxPort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxPort.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxPort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxPort.Location = new System.Drawing.Point(76, 97);
             this.txtBoxPort.Name = "txtBoxPort";
-            this.txtBoxPort.Size = new System.Drawing.Size(290, 20);
+            this.txtBoxPort.Size = new System.Drawing.Size(290, 21);
             this.txtBoxPort.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 70);
+            this.label1.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(44, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 13);
+            this.label1.Size = new System.Drawing.Size(27, 14);
             this.label1.TabIndex = 1;
             this.label1.Text = "Port";
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 40);
+            this.label2.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(3, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(375, 24);
             this.label2.TabIndex = 2;
@@ -126,302 +134,404 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 96);
+            this.label3.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(6, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(65, 14);
             this.label3.TabIndex = 4;
             this.label3.Text = "Max Players";
             // 
             // txtBoxMaxPlayers
             // 
-            this.txtBoxMaxPlayers.Location = new System.Drawing.Point(76, 93);
+            this.txtBoxMaxPlayers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxMaxPlayers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxMaxPlayers.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxMaxPlayers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxMaxPlayers.Location = new System.Drawing.Point(76, 123);
             this.txtBoxMaxPlayers.Name = "txtBoxMaxPlayers";
-            this.txtBoxMaxPlayers.Size = new System.Drawing.Size(290, 20);
+            this.txtBoxMaxPlayers.Size = new System.Drawing.Size(290, 21);
             this.txtBoxMaxPlayers.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 123);
+            this.label4.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(35, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(36, 14);
             this.label4.TabIndex = 6;
             this.label4.Text = "World";
             // 
             // txtBoxWorld
             // 
-            this.txtBoxWorld.Location = new System.Drawing.Point(76, 119);
+            this.txtBoxWorld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxWorld.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxWorld.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxWorld.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxWorld.Location = new System.Drawing.Point(76, 149);
             this.txtBoxWorld.Name = "txtBoxWorld";
-            this.txtBoxWorld.Size = new System.Drawing.Size(260, 20);
+            this.txtBoxWorld.Size = new System.Drawing.Size(260, 21);
             this.txtBoxWorld.TabIndex = 5;
             // 
             // btnFileDialogueWorld
             // 
-            this.btnFileDialogueWorld.Location = new System.Drawing.Point(342, 118);
+            this.btnFileDialogueWorld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(122)))), ((int)(((byte)(90)))));
+            this.btnFileDialogueWorld.FlatAppearance.BorderSize = 0;
+            this.btnFileDialogueWorld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileDialogueWorld.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.btnFileDialogueWorld.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFileDialogueWorld.Location = new System.Drawing.Point(342, 148);
             this.btnFileDialogueWorld.Name = "btnFileDialogueWorld";
             this.btnFileDialogueWorld.Size = new System.Drawing.Size(25, 22);
             this.btnFileDialogueWorld.TabIndex = 7;
             this.btnFileDialogueWorld.Text = "...";
-            this.btnFileDialogueWorld.UseVisualStyleBackColor = true;
+            this.btnFileDialogueWorld.UseVisualStyleBackColor = false;
             this.btnFileDialogueWorld.Click += new System.EventHandler(this.btnFileDialogueWorld_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 149);
+            this.label5.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(7, 179);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.Size = new System.Drawing.Size(66, 14);
             this.label5.TabIndex = 9;
             this.label5.Text = "Auto Create";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(25, 175);
+            this.label6.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(25, 205);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.Size = new System.Drawing.Size(45, 14);
             this.label6.TabIndex = 11;
             this.label6.Text = "Ban List";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 227);
+            this.label7.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(10, 257);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.Size = new System.Drawing.Size(61, 14);
             this.label7.TabIndex = 15;
             this.label7.Text = "World Path";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 201);
+            this.label8.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(4, 231);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 13);
+            this.label8.Size = new System.Drawing.Size(68, 14);
             this.label8.TabIndex = 13;
             this.label8.Text = "World Name";
             // 
             // txtBoxWorldName
             // 
-            this.txtBoxWorldName.Location = new System.Drawing.Point(77, 198);
+            this.txtBoxWorldName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxWorldName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxWorldName.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxWorldName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxWorldName.Location = new System.Drawing.Point(77, 228);
             this.txtBoxWorldName.Name = "txtBoxWorldName";
-            this.txtBoxWorldName.Size = new System.Drawing.Size(290, 20);
+            this.txtBoxWorldName.Size = new System.Drawing.Size(290, 21);
             this.txtBoxWorldName.TabIndex = 12;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(38, 331);
+            this.label9.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(38, 361);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 13);
+            this.label9.Size = new System.Drawing.Size(31, 14);
             this.label9.TabIndex = 23;
             this.label9.Text = "Seed";
             // 
             // txtBoxSeed
             // 
-            this.txtBoxSeed.Location = new System.Drawing.Point(76, 328);
+            this.txtBoxSeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxSeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxSeed.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxSeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxSeed.Location = new System.Drawing.Point(76, 358);
             this.txtBoxSeed.Name = "txtBoxSeed";
-            this.txtBoxSeed.Size = new System.Drawing.Size(291, 20);
+            this.txtBoxSeed.Size = new System.Drawing.Size(291, 21);
             this.txtBoxSeed.TabIndex = 22;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(53, 305);
+            this.label10.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(53, 335);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 13);
+            this.label10.Size = new System.Drawing.Size(16, 14);
             this.label10.TabIndex = 21;
             this.label10.Text = "IP";
             // 
             // txtBoxIP
             // 
-            this.txtBoxIP.Location = new System.Drawing.Point(77, 302);
+            this.txtBoxIP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxIP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxIP.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxIP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxIP.Location = new System.Drawing.Point(77, 332);
             this.txtBoxIP.Name = "txtBoxIP";
-            this.txtBoxIP.Size = new System.Drawing.Size(290, 20);
+            this.txtBoxIP.Size = new System.Drawing.Size(290, 21);
             this.txtBoxIP.TabIndex = 20;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(33, 279);
+            this.label11.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(33, 309);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 13);
+            this.label11.Size = new System.Drawing.Size(35, 14);
             this.label11.TabIndex = 19;
             this.label11.Text = "UPNP";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(29, 253);
+            this.label12.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(29, 283);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.Size = new System.Drawing.Size(40, 14);
             this.label12.TabIndex = 17;
             this.label12.Text = "Secure";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(32, 435);
+            this.label13.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(32, 465);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 13);
+            this.label13.Size = new System.Drawing.Size(42, 14);
             this.label13.TabIndex = 31;
             this.label13.Text = "Priority";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 409);
+            this.label14.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(15, 439);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 13);
+            this.label14.Size = new System.Drawing.Size(54, 14);
             this.label14.TabIndex = 29;
             this.label14.Text = "Language";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(31, 383);
+            this.label15.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(31, 413);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(39, 13);
+            this.label15.Size = new System.Drawing.Size(38, 14);
             this.label15.TabIndex = 27;
             this.label15.Text = "MOTD";
             // 
             // txtBoxMOTD
             // 
-            this.txtBoxMOTD.Location = new System.Drawing.Point(76, 380);
+            this.txtBoxMOTD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxMOTD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxMOTD.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxMOTD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxMOTD.Location = new System.Drawing.Point(76, 410);
             this.txtBoxMOTD.Name = "txtBoxMOTD";
-            this.txtBoxMOTD.Size = new System.Drawing.Size(291, 20);
+            this.txtBoxMOTD.Size = new System.Drawing.Size(291, 21);
             this.txtBoxMOTD.TabIndex = 26;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 357);
+            this.label16.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(23, 387);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(47, 13);
+            this.label16.Size = new System.Drawing.Size(50, 14);
             this.label16.TabIndex = 25;
             this.label16.Text = "Difficulty";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(17, 487);
+            this.label17.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(17, 517);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 13);
+            this.label17.Size = new System.Drawing.Size(53, 14);
             this.label17.TabIndex = 35;
             this.label17.Text = "Password";
             // 
             // txtBoxPassword
             // 
-            this.txtBoxPassword.Location = new System.Drawing.Point(76, 484);
+            this.txtBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxPassword.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxPassword.Location = new System.Drawing.Point(76, 514);
             this.txtBoxPassword.Name = "txtBoxPassword";
-            this.txtBoxPassword.Size = new System.Drawing.Size(290, 20);
+            this.txtBoxPassword.Size = new System.Drawing.Size(290, 21);
             this.txtBoxPassword.TabIndex = 34;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(14, 461);
+            this.label18.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(14, 491);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(56, 13);
+            this.label18.Size = new System.Drawing.Size(58, 14);
             this.label18.TabIndex = 33;
             this.label18.Text = "npcstream";
             // 
             // txtBoxNpcStream
             // 
-            this.txtBoxNpcStream.Location = new System.Drawing.Point(76, 458);
+            this.txtBoxNpcStream.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxNpcStream.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxNpcStream.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxNpcStream.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxNpcStream.Location = new System.Drawing.Point(76, 488);
             this.txtBoxNpcStream.Name = "txtBoxNpcStream";
-            this.txtBoxNpcStream.Size = new System.Drawing.Size(290, 20);
+            this.txtBoxNpcStream.Size = new System.Drawing.Size(290, 21);
             this.txtBoxNpcStream.TabIndex = 32;
             // 
             // comboBoxAutoCreate
             // 
+            this.comboBoxAutoCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.comboBoxAutoCreate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxAutoCreate.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.comboBoxAutoCreate.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBoxAutoCreate.FormattingEnabled = true;
             this.comboBoxAutoCreate.Items.AddRange(new object[] {
             "small",
             "medium",
             "large"});
-            this.comboBoxAutoCreate.Location = new System.Drawing.Point(76, 146);
+            this.comboBoxAutoCreate.Location = new System.Drawing.Point(76, 176);
             this.comboBoxAutoCreate.Name = "comboBoxAutoCreate";
-            this.comboBoxAutoCreate.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxAutoCreate.Size = new System.Drawing.Size(290, 22);
             this.comboBoxAutoCreate.TabIndex = 36;
             this.comboBoxAutoCreate.SelectedIndexChanged += new System.EventHandler(this.comboBoxAutoCreate_SelectedIndexChanged);
             // 
             // btnFileDialogueBanList
             // 
-            this.btnFileDialogueBanList.Location = new System.Drawing.Point(342, 171);
+            this.btnFileDialogueBanList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(122)))), ((int)(((byte)(90)))));
+            this.btnFileDialogueBanList.FlatAppearance.BorderSize = 0;
+            this.btnFileDialogueBanList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileDialogueBanList.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.btnFileDialogueBanList.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFileDialogueBanList.Location = new System.Drawing.Point(342, 201);
             this.btnFileDialogueBanList.Name = "btnFileDialogueBanList";
             this.btnFileDialogueBanList.Size = new System.Drawing.Size(25, 22);
             this.btnFileDialogueBanList.TabIndex = 38;
             this.btnFileDialogueBanList.Text = "...";
-            this.btnFileDialogueBanList.UseVisualStyleBackColor = true;
+            this.btnFileDialogueBanList.UseVisualStyleBackColor = false;
             this.btnFileDialogueBanList.Click += new System.EventHandler(this.btnFileDialogueBanList_Click);
             // 
             // txtBoxBanList
             // 
-            this.txtBoxBanList.Location = new System.Drawing.Point(76, 172);
+            this.txtBoxBanList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxBanList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxBanList.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxBanList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxBanList.Location = new System.Drawing.Point(76, 202);
             this.txtBoxBanList.Name = "txtBoxBanList";
-            this.txtBoxBanList.Size = new System.Drawing.Size(260, 20);
+            this.txtBoxBanList.Size = new System.Drawing.Size(260, 21);
             this.txtBoxBanList.TabIndex = 37;
             // 
             // btnFileDialogueWorldPath
             // 
-            this.btnFileDialogueWorldPath.Location = new System.Drawing.Point(343, 223);
+            this.btnFileDialogueWorldPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(122)))), ((int)(((byte)(90)))));
+            this.btnFileDialogueWorldPath.FlatAppearance.BorderSize = 0;
+            this.btnFileDialogueWorldPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileDialogueWorldPath.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.btnFileDialogueWorldPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFileDialogueWorldPath.Location = new System.Drawing.Point(343, 253);
             this.btnFileDialogueWorldPath.Name = "btnFileDialogueWorldPath";
             this.btnFileDialogueWorldPath.Size = new System.Drawing.Size(25, 22);
             this.btnFileDialogueWorldPath.TabIndex = 40;
             this.btnFileDialogueWorldPath.Text = "...";
-            this.btnFileDialogueWorldPath.UseVisualStyleBackColor = true;
+            this.btnFileDialogueWorldPath.UseVisualStyleBackColor = false;
             this.btnFileDialogueWorldPath.Click += new System.EventHandler(this.btnFileDialogueWorldPath_Click);
             // 
             // txtBoxWorldPath
             // 
-            this.txtBoxWorldPath.Location = new System.Drawing.Point(77, 224);
+            this.txtBoxWorldPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxWorldPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxWorldPath.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxWorldPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxWorldPath.Location = new System.Drawing.Point(77, 254);
             this.txtBoxWorldPath.Name = "txtBoxWorldPath";
-            this.txtBoxWorldPath.Size = new System.Drawing.Size(260, 20);
+            this.txtBoxWorldPath.Size = new System.Drawing.Size(260, 21);
             this.txtBoxWorldPath.TabIndex = 39;
             // 
             // comboBoxSecure
             // 
+            this.comboBoxSecure.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.comboBoxSecure.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSecure.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.comboBoxSecure.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBoxSecure.FormattingEnabled = true;
             this.comboBoxSecure.Items.AddRange(new object[] {
             "false",
             "true"});
-            this.comboBoxSecure.Location = new System.Drawing.Point(76, 250);
+            this.comboBoxSecure.Location = new System.Drawing.Point(76, 280);
             this.comboBoxSecure.Name = "comboBoxSecure";
-            this.comboBoxSecure.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxSecure.Size = new System.Drawing.Size(290, 22);
             this.comboBoxSecure.TabIndex = 41;
             // 
             // comboBoxUPNP
             // 
+            this.comboBoxUPNP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.comboBoxUPNP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxUPNP.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.comboBoxUPNP.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBoxUPNP.FormattingEnabled = true;
             this.comboBoxUPNP.Items.AddRange(new object[] {
             "false",
             "true"});
-            this.comboBoxUPNP.Location = new System.Drawing.Point(76, 276);
+            this.comboBoxUPNP.Location = new System.Drawing.Point(76, 306);
             this.comboBoxUPNP.Name = "comboBoxUPNP";
-            this.comboBoxUPNP.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxUPNP.Size = new System.Drawing.Size(290, 22);
             this.comboBoxUPNP.TabIndex = 42;
             // 
             // comboBoxDifficulty
             // 
+            this.comboBoxDifficulty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.comboBoxDifficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDifficulty.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.comboBoxDifficulty.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBoxDifficulty.FormattingEnabled = true;
             this.comboBoxDifficulty.Items.AddRange(new object[] {
             "Classic",
             "Expert",
             "Master",
             "Journey"});
-            this.comboBoxDifficulty.Location = new System.Drawing.Point(76, 354);
+            this.comboBoxDifficulty.Location = new System.Drawing.Point(76, 384);
             this.comboBoxDifficulty.Name = "comboBoxDifficulty";
-            this.comboBoxDifficulty.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxDifficulty.Size = new System.Drawing.Size(290, 22);
             this.comboBoxDifficulty.TabIndex = 43;
             // 
             // comboBoxLanguage
             // 
+            this.comboBoxLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.comboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLanguage.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.comboBoxLanguage.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBoxLanguage.FormattingEnabled = true;
             this.comboBoxLanguage.Items.AddRange(new object[] {
             "en-US",
@@ -433,14 +543,17 @@
             "zh-Hans",
             "pt-BR",
             "pl-PL"});
-            this.comboBoxLanguage.Location = new System.Drawing.Point(76, 406);
+            this.comboBoxLanguage.Location = new System.Drawing.Point(76, 436);
             this.comboBoxLanguage.Name = "comboBoxLanguage";
-            this.comboBoxLanguage.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxLanguage.Size = new System.Drawing.Size(290, 22);
             this.comboBoxLanguage.TabIndex = 44;
             // 
             // comboBoxPriority
             // 
+            this.comboBoxPriority.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
             this.comboBoxPriority.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPriority.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.comboBoxPriority.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBoxPriority.FormattingEnabled = true;
             this.comboBoxPriority.Items.AddRange(new object[] {
             "Realtime",
@@ -449,25 +562,31 @@
             "Normal",
             "BelowNormal",
             "Idle"});
-            this.comboBoxPriority.Location = new System.Drawing.Point(76, 432);
+            this.comboBoxPriority.Location = new System.Drawing.Point(76, 462);
             this.comboBoxPriority.Name = "comboBoxPriority";
-            this.comboBoxPriority.Size = new System.Drawing.Size(290, 21);
+            this.comboBoxPriority.Size = new System.Drawing.Size(290, 22);
             this.comboBoxPriority.TabIndex = 45;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(10, 535);
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(122)))), ((int)(((byte)(90)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSave.Location = new System.Drawing.Point(10, 565);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(546, 23);
             this.btnSave.TabIndex = 46;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label19
             // 
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(372, 40);
+            this.label19.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(372, 70);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(188, 24);
             this.label19.TabIndex = 47;
@@ -476,7 +595,9 @@
             // 
             // checkBoxCrossServerChat
             // 
-            this.checkBoxCrossServerChat.Location = new System.Drawing.Point(372, 69);
+            this.checkBoxCrossServerChat.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxCrossServerChat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxCrossServerChat.Location = new System.Drawing.Point(372, 99);
             this.checkBoxCrossServerChat.Name = "checkBoxCrossServerChat";
             this.checkBoxCrossServerChat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxCrossServerChat.Size = new System.Drawing.Size(188, 17);
@@ -487,8 +608,9 @@
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(372, 143);
+            this.label20.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label20.Location = new System.Drawing.Point(372, 173);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(188, 24);
             this.label20.TabIndex = 49;
@@ -498,7 +620,9 @@
             // checkBoxCrossServerPlayingCommand
             // 
             this.checkBoxCrossServerPlayingCommand.Enabled = false;
-            this.checkBoxCrossServerPlayingCommand.Location = new System.Drawing.Point(372, 87);
+            this.checkBoxCrossServerPlayingCommand.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxCrossServerPlayingCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxCrossServerPlayingCommand.Location = new System.Drawing.Point(372, 117);
             this.checkBoxCrossServerPlayingCommand.Name = "checkBoxCrossServerPlayingCommand";
             this.checkBoxCrossServerPlayingCommand.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxCrossServerPlayingCommand.Size = new System.Drawing.Size(188, 17);
@@ -509,7 +633,9 @@
             // 
             // checkBoxAutoUpdateServer
             // 
-            this.checkBoxAutoUpdateServer.Location = new System.Drawing.Point(372, 123);
+            this.checkBoxAutoUpdateServer.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxAutoUpdateServer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxAutoUpdateServer.Location = new System.Drawing.Point(372, 153);
             this.checkBoxAutoUpdateServer.Name = "checkBoxAutoUpdateServer";
             this.checkBoxAutoUpdateServer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxAutoUpdateServer.Size = new System.Drawing.Size(188, 17);
@@ -521,7 +647,9 @@
             // checkBoxAllowMobileAppControl
             // 
             this.checkBoxAllowMobileAppControl.Enabled = false;
-            this.checkBoxAllowMobileAppControl.Location = new System.Drawing.Point(372, 105);
+            this.checkBoxAllowMobileAppControl.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxAllowMobileAppControl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxAllowMobileAppControl.Location = new System.Drawing.Point(372, 135);
             this.checkBoxAllowMobileAppControl.Name = "checkBoxAllowMobileAppControl";
             this.checkBoxAllowMobileAppControl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxAllowMobileAppControl.Size = new System.Drawing.Size(188, 17);
@@ -532,7 +660,9 @@
             // 
             // checkBoxExit
             // 
-            this.checkBoxExit.Location = new System.Drawing.Point(372, 170);
+            this.checkBoxExit.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxExit.Location = new System.Drawing.Point(372, 200);
             this.checkBoxExit.Name = "checkBoxExit";
             this.checkBoxExit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxExit.Size = new System.Drawing.Size(188, 17);
@@ -543,7 +673,9 @@
             // 
             // checkBoxExitNoSave
             // 
-            this.checkBoxExitNoSave.Location = new System.Drawing.Point(372, 188);
+            this.checkBoxExitNoSave.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxExitNoSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxExitNoSave.Location = new System.Drawing.Point(372, 218);
             this.checkBoxExitNoSave.Name = "checkBoxExitNoSave";
             this.checkBoxExitNoSave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxExitNoSave.Size = new System.Drawing.Size(188, 17);
@@ -554,7 +686,9 @@
             // 
             // checkBoxKick
             // 
-            this.checkBoxKick.Location = new System.Drawing.Point(372, 224);
+            this.checkBoxKick.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxKick.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxKick.Location = new System.Drawing.Point(372, 254);
             this.checkBoxKick.Name = "checkBoxKick";
             this.checkBoxKick.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxKick.Size = new System.Drawing.Size(188, 17);
@@ -565,7 +699,9 @@
             // 
             // checkBoxSave
             // 
-            this.checkBoxSave.Location = new System.Drawing.Point(372, 206);
+            this.checkBoxSave.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxSave.Location = new System.Drawing.Point(372, 236);
             this.checkBoxSave.Name = "checkBoxSave";
             this.checkBoxSave.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxSave.Size = new System.Drawing.Size(188, 17);
@@ -576,7 +712,9 @@
             // 
             // checkBoxBan
             // 
-            this.checkBoxBan.Location = new System.Drawing.Point(372, 242);
+            this.checkBoxBan.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxBan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxBan.Location = new System.Drawing.Point(372, 272);
             this.checkBoxBan.Name = "checkBoxBan";
             this.checkBoxBan.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxBan.Size = new System.Drawing.Size(188, 17);
@@ -587,7 +725,9 @@
             // 
             // checkBoxPort
             // 
-            this.checkBoxPort.Location = new System.Drawing.Point(372, 332);
+            this.checkBoxPort.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxPort.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxPort.Location = new System.Drawing.Point(372, 362);
             this.checkBoxPort.Name = "checkBoxPort";
             this.checkBoxPort.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPort.Size = new System.Drawing.Size(188, 17);
@@ -598,7 +738,9 @@
             // 
             // checkBoxTime
             // 
-            this.checkBoxTime.Location = new System.Drawing.Point(372, 314);
+            this.checkBoxTime.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxTime.Location = new System.Drawing.Point(372, 344);
             this.checkBoxTime.Name = "checkBoxTime";
             this.checkBoxTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxTime.Size = new System.Drawing.Size(188, 17);
@@ -609,7 +751,9 @@
             // 
             // checkBoxVersion
             // 
-            this.checkBoxVersion.Location = new System.Drawing.Point(372, 296);
+            this.checkBoxVersion.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxVersion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxVersion.Location = new System.Drawing.Point(372, 326);
             this.checkBoxVersion.Name = "checkBoxVersion";
             this.checkBoxVersion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxVersion.Size = new System.Drawing.Size(188, 17);
@@ -620,7 +764,9 @@
             // 
             // checkBoxPasswordSet
             // 
-            this.checkBoxPasswordSet.Location = new System.Drawing.Point(372, 278);
+            this.checkBoxPasswordSet.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxPasswordSet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxPasswordSet.Location = new System.Drawing.Point(372, 308);
             this.checkBoxPasswordSet.Name = "checkBoxPasswordSet";
             this.checkBoxPasswordSet.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPasswordSet.Size = new System.Drawing.Size(188, 17);
@@ -631,7 +777,9 @@
             // 
             // checkBoxPassword
             // 
-            this.checkBoxPassword.Location = new System.Drawing.Point(372, 260);
+            this.checkBoxPassword.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxPassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxPassword.Location = new System.Drawing.Point(372, 290);
             this.checkBoxPassword.Name = "checkBoxPassword";
             this.checkBoxPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPassword.Size = new System.Drawing.Size(188, 17);
@@ -642,7 +790,9 @@
             // 
             // checkBoxMaxPlayers
             // 
-            this.checkBoxMaxPlayers.Location = new System.Drawing.Point(372, 350);
+            this.checkBoxMaxPlayers.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxMaxPlayers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxMaxPlayers.Location = new System.Drawing.Point(372, 380);
             this.checkBoxMaxPlayers.Name = "checkBoxMaxPlayers";
             this.checkBoxMaxPlayers.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMaxPlayers.Size = new System.Drawing.Size(188, 17);
@@ -653,7 +803,9 @@
             // 
             // checkBoxMotd
             // 
-            this.checkBoxMotd.Location = new System.Drawing.Point(372, 368);
+            this.checkBoxMotd.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxMotd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxMotd.Location = new System.Drawing.Point(372, 398);
             this.checkBoxMotd.Name = "checkBoxMotd";
             this.checkBoxMotd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMotd.Size = new System.Drawing.Size(188, 17);
@@ -664,7 +816,9 @@
             // 
             // checkBoxMotdSet
             // 
-            this.checkBoxMotdSet.Location = new System.Drawing.Point(372, 386);
+            this.checkBoxMotdSet.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxMotdSet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxMotdSet.Location = new System.Drawing.Point(372, 416);
             this.checkBoxMotdSet.Name = "checkBoxMotdSet";
             this.checkBoxMotdSet.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMotdSet.Size = new System.Drawing.Size(188, 17);
@@ -675,7 +829,9 @@
             // 
             // checkBoxDawn
             // 
-            this.checkBoxDawn.Location = new System.Drawing.Point(372, 404);
+            this.checkBoxDawn.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxDawn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxDawn.Location = new System.Drawing.Point(372, 434);
             this.checkBoxDawn.Name = "checkBoxDawn";
             this.checkBoxDawn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxDawn.Size = new System.Drawing.Size(188, 17);
@@ -686,7 +842,9 @@
             // 
             // checkBoxNoon
             // 
-            this.checkBoxNoon.Location = new System.Drawing.Point(372, 422);
+            this.checkBoxNoon.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxNoon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxNoon.Location = new System.Drawing.Point(372, 452);
             this.checkBoxNoon.Name = "checkBoxNoon";
             this.checkBoxNoon.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxNoon.Size = new System.Drawing.Size(188, 17);
@@ -697,7 +855,9 @@
             // 
             // checkBoxDusk
             // 
-            this.checkBoxDusk.Location = new System.Drawing.Point(372, 440);
+            this.checkBoxDusk.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxDusk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxDusk.Location = new System.Drawing.Point(372, 470);
             this.checkBoxDusk.Name = "checkBoxDusk";
             this.checkBoxDusk.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxDusk.Size = new System.Drawing.Size(188, 17);
@@ -708,7 +868,9 @@
             // 
             // checkBoxMidnight
             // 
-            this.checkBoxMidnight.Location = new System.Drawing.Point(372, 458);
+            this.checkBoxMidnight.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxMidnight.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxMidnight.Location = new System.Drawing.Point(372, 488);
             this.checkBoxMidnight.Name = "checkBoxMidnight";
             this.checkBoxMidnight.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxMidnight.Size = new System.Drawing.Size(188, 17);
@@ -719,7 +881,9 @@
             // 
             // checkBoxSettle
             // 
-            this.checkBoxSettle.Location = new System.Drawing.Point(372, 476);
+            this.checkBoxSettle.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxSettle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxSettle.Location = new System.Drawing.Point(372, 506);
             this.checkBoxSettle.Name = "checkBoxSettle";
             this.checkBoxSettle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxSettle.Size = new System.Drawing.Size(188, 17);
@@ -730,7 +894,9 @@
             // 
             // checkBoxSeed
             // 
-            this.checkBoxSeed.Location = new System.Drawing.Point(372, 494);
+            this.checkBoxSeed.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxSeed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxSeed.Location = new System.Drawing.Point(372, 524);
             this.checkBoxSeed.Name = "checkBoxSeed";
             this.checkBoxSeed.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxSeed.Size = new System.Drawing.Size(188, 17);
@@ -741,7 +907,9 @@
             // 
             // checkBoxPlaying
             // 
-            this.checkBoxPlaying.Location = new System.Drawing.Point(372, 512);
+            this.checkBoxPlaying.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.checkBoxPlaying.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBoxPlaying.Location = new System.Drawing.Point(372, 542);
             this.checkBoxPlaying.Name = "checkBoxPlaying";
             this.checkBoxPlaying.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.checkBoxPlaying.Size = new System.Drawing.Size(188, 17);
@@ -753,24 +921,41 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(1, 15);
+            this.label21.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label21.Location = new System.Drawing.Point(1, 45);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(69, 13);
+            this.label21.Size = new System.Drawing.Size(70, 14);
             this.label21.TabIndex = 76;
             this.label21.Text = "Server Name";
             // 
             // txtBoxServerName
             // 
-            this.txtBoxServerName.Location = new System.Drawing.Point(76, 12);
+            this.txtBoxServerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(225)))), ((int)(((byte)(157)))));
+            this.txtBoxServerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxServerName.Font = new System.Drawing.Font("Leelawadee", 8.25F);
+            this.txtBoxServerName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBoxServerName.Location = new System.Drawing.Point(76, 42);
             this.txtBoxServerName.Name = "txtBoxServerName";
-            this.txtBoxServerName.Size = new System.Drawing.Size(480, 20);
+            this.txtBoxServerName.Size = new System.Drawing.Size(480, 21);
             this.txtBoxServerName.TabIndex = 75;
+            // 
+            // menuBar1
+            // 
+            this.menuBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(46)))));
+            this.menuBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuBar1.Location = new System.Drawing.Point(0, 0);
+            this.menuBar1.Name = "menuBar1";
+            this.menuBar1.Size = new System.Drawing.Size(566, 30);
+            this.menuBar1.TabIndex = 77;
             // 
             // SettingsDialogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 565);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(74)))), ((int)(((byte)(72)))));
+            this.ClientSize = new System.Drawing.Size(566, 595);
+            this.Controls.Add(this.menuBar1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.txtBoxServerName);
             this.Controls.Add(this.checkBoxPlaying);
@@ -838,7 +1023,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBoxPort);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingsDialogue";
@@ -919,5 +1104,6 @@
         private System.Windows.Forms.CheckBox checkBoxPlaying;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtBoxServerName;
+        private UserControls.MenuBar menuBar1;
     }
 }

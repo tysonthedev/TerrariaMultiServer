@@ -15,9 +15,9 @@ namespace TerrariaMultiServer.Forms
         public ServerFormReturnValue returnValue;
         public enum ServerFormReturnValue 
         {
+            Cancel,
             NewServer,
-            ExistingServer,
-            Cancel
+            ExistingServer
         }
         public NewOrExistingServer()
         {

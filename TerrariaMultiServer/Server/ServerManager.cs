@@ -165,6 +165,17 @@ namespace TerrariaMultiServer
             }
             return false;
         }
+        public void RemoveServer(string serverName) 
+        {
+            for (int i = 0; i < serverList.Count; i++)
+            {
+                if (serverList[i].serverName == serverName) 
+                {
+                    serverList.RemoveAt(i);
+                    return;
+                }
+            }
+        }
         public void RemoveServerAt(int index) 
         {
             serverList.RemoveAt(index);

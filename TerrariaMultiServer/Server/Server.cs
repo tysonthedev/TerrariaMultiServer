@@ -95,6 +95,7 @@ namespace TerrariaMultiServer
             autoUpdate = _autoUpdate;
             serverProcess = new Process();
             serverLog = new string[logSize];
+            _serverConfig = new TerrariaConfig(serverDirectory + "\\serverconfig.txt");
             for (int i = 0; i < logSize; i++) serverLog[i] = "";
         }
         [OnDeserialized()]
